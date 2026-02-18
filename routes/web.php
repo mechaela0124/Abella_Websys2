@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 
+<<<<<<< HEAD
 
 Route::get('/student/{id}/{name}', function ($id, $name) {
     return view('student', [
@@ -31,4 +32,8 @@ Route::get('/event/{event}/{participant}/{yearLevel}', function ($event, $partic
         'participant' => $participant,
         'yearLevel' => $yearLevel
     ]);
+=======
+Route::get('/', function () {
+    return view('welcome');
+>>>>>>> 14625d440e51c6e9facf4470ecd7bb480684760e
 });
