@@ -18,7 +18,7 @@
 
     <p><strong>Average:</strong> {{ number_format($average, 2) }}</p>
 
-    {{-- LETTER GRADE --}}
+
     @if($average >= 90 && $average <= 100)
         <p><strong>Letter Grade:</strong> A</p>
     @elseif($average >= 80)
@@ -31,14 +31,14 @@
         <p><strong>Letter Grade:</strong> F</p>
     @endif
 
-    {{-- REMARKS --}}
+
     @if($average >= 75)
         <p><strong>Remarks:</strong> Passed</p>
     @else
         <p><strong>Remarks:</strong> Failed</p>
     @endif
 
-    {{-- ACADEMIC AWARD --}}
+
     @if($average >= 98 && $average <= 100)
         <p><strong>Award:</strong> With Highest Honors</p>
     @elseif($average >= 95)
